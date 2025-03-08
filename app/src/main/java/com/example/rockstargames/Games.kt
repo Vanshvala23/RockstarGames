@@ -34,6 +34,12 @@ class Games : Fragment() {
             if (selectedGame.title == "GTA V") {
                 openGtaVFragment()  // Now this function is correctly called
             }
+            else if (selectedGame.title == "Red Dead Redemption 2") {
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainer, Rdr2Fragment())
+                    .addToBackStack(null)
+                    .commit()
+            }
         }
         recyclerView.adapter = gamesAdapter
     }

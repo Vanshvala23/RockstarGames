@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/black"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Cinematic Header Image -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="12dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/gold"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/rdr2Header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rdr2_header"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Trailer Section -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Official Trailers"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ed6d29"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rdr2TrailerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="24dp"
+            android:scrollbars="none"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- Game Title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rdr2Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Dead Redemption 2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ed6d29"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Overview Section -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RDR2 is an epic tale of life in America's unforgiving heartland. The game's vast and atmospheric world also provides the foundation for a brand-new online multiplayer experience."
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="6dp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Features Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/gold"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Features"
+                    android:textSize="22sp"
+                    android:textColor="#ed6d29"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/explore_a_vast_open_world_set_in_1899_america_n_dynamic_ai_realistic_world_interactions_n_experience_arthur_morgan_s_journey_as_an_outlaw"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Image Gallery -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screenshots"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ed6d29"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rdr2GalleryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="none"
+            android:nestedScrollingEnabled="false"
+            android:padding="8dp"/>
+
+        <!-- Button to View More Updates -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewRdr2Updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Updates"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:backgroundTint="@color/gold"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="50dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

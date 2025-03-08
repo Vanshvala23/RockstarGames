@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rockstargames.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_games"
+        android:name="com.example.rockstargames.ui.GamesFragment"
+        android:label="Games"
+        tools:layout="@layout/fragment_games" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.rockstargames.ui.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_social"
+        android:name="com.example.rockstargames.ui.SocialFragment"
+        android:label="Social"
+        tools:layout="@layout/fragment_social" />
+</navigation>

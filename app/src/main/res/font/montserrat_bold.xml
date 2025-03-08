@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fontProviderAuthority="com.google.android.gms.fonts"
+    android:fontProviderPackage="com.google.android.gms"
+    android:fontProviderQuery="Montserrat"
+    tools:ignore="UnusedAttribute">
+</font-family>

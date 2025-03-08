@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/black"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Cinematic Header Image (Parallax Effect) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="12dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/gold"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/gtaVHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gta_v_header"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Trailer Section -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Official Trailers"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trailerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="24dp"
+            android:scrollbars="none"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- Game Title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gtaVTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Theft Auto V"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Overview Section -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GTA V is an open-world action-adventure game released in 2013 by Rockstar Games. It features a vast world, multiple protagonists, and a highly detailed online multiplayer mode."
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="6dp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Features Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/gold"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Features"
+                    android:textSize="22sp"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_world_with_vast_cities_and_countryside_n_multiple_protagonists_with_unique_abilities_n_gta_online_with_constant_updates_new_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Image Gallery -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screenshots"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/galleryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:nestedScrollingEnabled="false"
+            android:padding="8dp"
+            android:scrollbars="none"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!-- Button to View More Updates -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewUpdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Updates"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:backgroundTint="@color/gold"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="50dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

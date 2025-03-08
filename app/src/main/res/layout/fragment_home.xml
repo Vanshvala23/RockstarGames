@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2d30"
+    android:padding="16dp">
+    <WebView
+        android:id="@+id/featuredImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:use_controller="false"
+        tools:ignore="MissingConstraints"/>
+
+    <!-- Introduction Text -->
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Rockstar Games. The home of GTA, Red Dead Redemption, and groundbreaking entertainment."
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/featuredImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Learn More Button -->
+    <Button
+        android:id="@+id/learnMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn More"
+        android:textSize="16sp"
+        android:backgroundTint="@color/gold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/introText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <!-- Social Media Icons -->
+    <LinearLayout
+        android:id="@+id/socialMediaLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/learnMoreButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/youtubeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/youtube"
+            android:contentDescription="YouTube"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/twitterIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/twitter"
+            android:contentDescription="Twitter"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/instagramIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/instagram"
+            android:contentDescription="Instagram"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Footer Section -->
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2025 Rockstar Games. All Rights Reserved.\nPrivacy Policy | Terms of Service"
+        android:textSize="14sp"
+        android:textColor="#8C8C8C"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
